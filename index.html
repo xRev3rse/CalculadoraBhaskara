@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="bhaskara.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Bhaskara</title>
+</head>
+<body>
+
+    <header>
+        <h1 id="title">Calculando Bhaskara</h1>
+        <a href="https://github.com/xRev3rse"><p id="cred">Desenvolvido por Raony</p></a>
+    </header>
+
+    <div id="container">
+        <div id="inputs">
+            <p class="typevalue">Digite o valor de <strong>A</strong>:</p>
+            <input type="number" id="valorA" class="button">
+            <hr>
+            <p class="typevalue">Digite o valor de <strong>B</strong>:</p>
+            <input type="number" id="valorB" class="button">
+            <hr>
+            <p class="typevalue">Digite o valor de <strong>C</strong>:</p>
+            <input type="number" id="valorC" class="button">
+            <input type="button" id="calcular" value="Calcular" onclick="calcular()">
+        </div>
+        <br>
+        <div id="res">O Resultado irá aparacer aqui...</div>
+    </div>    
+</body>
+</html>

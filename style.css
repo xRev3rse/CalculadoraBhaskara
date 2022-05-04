@@ -1,0 +1,105 @@
+@font-face {
+    font-family: fredoka;
+    src: url('fredoka.ttf') format('truetype');
+}
+
+* {
+    user-select: none;
+    padding: 0%;
+    margin: 0%;
+    font-family: fredoka;
+}
+
+body {
+    background-color: rgb(226, 224, 224);
+}
+
+hr {
+    width: 90%;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+strong {
+    text-decoration: underline;
+}
+
+header {
+    background-color: rgb(0, 0, 63);
+    color: #fff;
+    text-shadow: 2px 2px 0px #000;
+    
+    padding: 8px;
+    margin-bottom: 40px;
+}
+
+#title {
+    text-decoration: underline;
+    display: inline;
+    font-size: 35px;
+}
+
+#cred {
+    font-size: 19px;
+    margin-left: 25px;
+    display: inline;
+}
+
+#container {
+    background-color: rgb(0, 0, 63);
+    
+    margin: auto;
+    width: 80%;
+    min-height: 500px;
+    padding: 15px;
+    border-radius: 15px;
+    color: white;
+}
+
+#res {
+    background-color: rgb(238, 238, 238);
+    color: #000;
+    box-shadow: 1px 2px 6px black;
+    
+    padding: 8px;
+    min-height: 250px;
+    font-size: 24px;
+    border-radius: 10px;
+    width: 95%;
+    margin: auto;
+}
+
+.button {
+    background-color: #fff;
+    
+    text-align: center;
+    width: 90%;
+    height: 25px;
+    font-size: 18px;
+    border-radius: 8px;
+    margin-bottom: 8px;
+}
+
+.typevalue {
+    text-shadow: 2px 2px 0px #000;
+    font-size: 20px;
+}
+
+
+#calcular {
+    background-color: red;
+    color: white;
+    text-shadow: 2px 2px 0px #000;
+    box-shadow: 1px 2px 5px #000;
+
+    width: 30%;
+    padding: 8px;
+    height: 50px;
+    border-radius: 8px;
+    font-size: 25px;
+    margin: auto;
+    display: block;
+}
