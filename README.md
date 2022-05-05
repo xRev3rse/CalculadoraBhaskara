@@ -31,7 +31,7 @@ Agradecemos às seguintes pessoas que contribuíram para este projeto:
       <a href="#">
         <img src="https://avatars.githubusercontent.com/u/88351922?v=4" width="100px;"/><br>
         <sub>
-          <b>ReySmallDev</b>
+          <a href="https://github.com/reysmalldev"><b>ReySmallDev</b></a>
         </sub>
       </a>
     </td>
