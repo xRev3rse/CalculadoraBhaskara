@@ -76,16 +76,20 @@ function calcular() {
                 
                 res.innerHTML += `x2 = ${b} - ${raizdelta} ÷ ${2 * a}<br>`
                 res.innerHTML += `x2 = ${b - raizdelta} ÷ ${2 * a}<br>`
-                res.innerHTML += `x2 = ${r2}<br>`
+                res.innerHTML += `x2 = ${r2}`
+                res.innerHTML += `<br><br><hr><br>S={${r1} ; ${r2}}`
             } else {
                 res.innerHTML += `Informação: O delta não possui raiz quadrada<br>`
                 res.innerHTML += `x = –b ± √Δ ÷ 2·a<br>`
                 res.innerHTML += `x = -(-${b}) ± √${delta} ÷ 2·${a}<br>`
-                res.innerHTML += `x = ${b/(2*a)} ± √${delta} ÷ ${2 * a}<br><br>`
+                
+                let x1 = `${b} ± √${delta} ÷ 2·${2 * a}`
+                let x2 = `${b/(2*a)} ± √${delta} ÷ ${2 * a}`
 
                 res.innerHTML += `x1 e x2 encontrados!&#128513;<br>`
                 res.innerHTML += `x1 = ${b/(2*a)} + √${delta}<br>`
-                res.innerHTML += `x2 = ${b/(2*a)} - √${delta}<br>`
+                res.innerHTML += `x2 = ${b/(2*a)} - √${delta}`
+                res.innerHTML += `<br><br><hr><br>S={${x1} ; ${x2}}`
             }
 
 
@@ -105,17 +109,19 @@ function calcular() {
 
                 res.innerHTML += `x2 = ${b} - ${raizdelta} ÷ ${2 * a}<br>`
                 res.innerHTML += `x2 = ${b - raizdelta} ÷ ${2 * a}<br>`
-                res.innerHTML += `x2 = ${r2}<br><br>`
+                res.innerHTML += `x2 = ${r2}`
+
+                res.innerHTML += `<br><br><hr><br>S={${r1} ; ${r2}}`
             } else {
                 res.innerHTML += `Informação: O delta não possui raiz quadrada<br>`
                 res.innerHTML += `x = –b ± √Δ ÷ 2·a<br>`
-                res.innerHTML += `x = ${b/(2*a)} ± √${delta} ÷ 2·${a}<br>`
-                res.innerHTML += `x = ${b/(2*a)} ± √${delta} ÷ ${2 * a}<br><br>`
+                res.innerHTML += `x = ${b} ± √${delta} ÷ 2·${a}<br>`
+                res.innerHTML += `x = ${b} ± √${delta} ÷ ${2 * a}<br><br>`
 
-                res.innerHTML += `x1 e x2 encontrados!&#128513;<br>`
-                res.innerHTML += `x1 = ${b/(2*a)} + √${delta}<br>`
-                res.innerHTML += `x2 = ${b/(2*a)} - √${delta}<br>`
-
+                res.innerHTML += `x1 e x2 encontrados!&#128513;`
+                let x1 = `${b/(2*a)} + √${delta}`
+                let x2 = `${b/(2*a)} - √${delta}`
+                res.innerHTML += `<br><br><hr><br>S={${x1} ; ${x2}}`
 
 
             }
@@ -130,7 +136,10 @@ function calcular() {
             res.innerHTML += `x = ${b} ± √0 ÷ 2·${a}<br>`
             res.innerHTML += `x = ${b} ± 0 ÷ ${2*a}<br>`
             res.innerHTML += `x1 = ${b} ÷ ${2*a}<br>`
-            res.innerHTML += `A raíz da equação é: ${r}`
+            res.innerHTML += `x1 = ${r}<br><br>`
+            
+            res.innerHTML += `A raíz da equação é: ${r}<br><br><hr><br>`
+            res.innerHTML += `S={${r}}`
         } else if (b < 0) {
             b = b * -1
             res.innerHTML += `Raíz encontrada!&#128513;<br>`
@@ -138,8 +147,11 @@ function calcular() {
     
             res.innerHTML += `x = -(-${b}) ± √0 ÷ 2·${a}<br>`
             res.innerHTML += `x = ${b} ± 0 ÷ ${2*a}<br>`
-            res.innerHTML += `x1 = ${b} ÷ ${2*a}<br><br>`
-            res.innerHTML += `A raíz da equação é: ${r}`
+            res.innerHTML += `x1 = ${b} ÷ ${2*a}<br>`
+            res.innerHTML += `x1 = ${r}<br><br>`
+
+            res.innerHTML += `A raíz da equação é: ${r}<br><br><hr><br>`
+            res.innerHTML += `S={${r}}`
         }
     }
     
