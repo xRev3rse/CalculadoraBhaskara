@@ -8,7 +8,7 @@
 
 O projeto ainda está em desenvolvimento e as próximas atualizações serão voltadas nas seguintes tarefas:
 
-- [ ] Concluir todo o cálculo
+- [ ] Concluir todas etapas da fórmula
 - [x] Remoção de erros
 - [ ] Botões extras 
 - [x] Regras de sinais
