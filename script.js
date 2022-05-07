@@ -56,9 +56,12 @@ function calcular() {
     res.innerHTML += `Δ = ${delta} <br><br><hr><br>`
 
 
+
     if (delta < 0) {
         res.innerHTML += 'Como o Δ é negativo, não temos raízes reais.';
     } else if (delta > 0) {
+
+
 
         // Se B for menor que zero...
         if (b < 0) {
@@ -122,13 +125,16 @@ function calcular() {
                 let x1 = `${b/(2*a)} + √${delta}`
                 let x2 = `${b/(2*a)} - √${delta}`
                 res.innerHTML += `<br><br><hr><br>S={${x1} ; ${x2}}`
-
-
             }
         }
+
+
+
     } else if (delta == 0) {
         
         if (b > 0) {
+        
+        
             b = b * -1
             res.innerHTML += `Raíz encontrada!&#128513;<br>`
             res.innerHTML += `x = –b ± √Δ ÷ 2·a<br>`
@@ -140,7 +146,11 @@ function calcular() {
             
             res.innerHTML += `A raíz da equação é: ${r}<br><br><hr><br>`
             res.innerHTML += `S={${r}}`
+        
+        
         } else if (b < 0) {
+        
+        
             b = b * -1
             res.innerHTML += `Raíz encontrada!&#128513;<br>`
             res.innerHTML += `x = –b ± √Δ ÷ 2·a<br>`
