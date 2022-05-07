@@ -16,18 +16,49 @@ function calcular() {
     console.log(r1, r2)
     
 
-    
-    if (delta < 0) {
-        res.innerHTML = 'Não há raízes reais (Delta menor que zero).';
-    } else if (delta > 0) {
-        res.innerHTML =  'Calculando o delta... &#128516<br>';
-        res.innerHTML +=  'Δ = b² - 4.a.c <br>';
-        res.innerHTML +=  `Δ = ${b}² - 4.${a}.${c} <br>`;
-        res.innerHTML += `Δ = ${b}² - 4.${a * c} <br>`;
-        res.innerHTML += `Δ = ${b ** 2} - ${4 * a * c} <br>`;
-        res.innerHTML += `Δ = ${delta} <br><br><hr><br>`;
-        
 
+
+
+    res.innerHTML =  'Coeficientes:<br>'
+    if (a > 0) {
+        res.innerHTML += `a = ${a} (Positivo)<br>`
+    } else if (a < 0) {
+        res.innerHTML += `a = ${a} (Negativo)<br>`
+    } else if (a == 0) {
+        res.innerHTML += `a = 0<br>`
+    }
+
+    if (b > 0) {
+        res.innerHTML += `b = ${b} (Positivo)<br>`
+    } else if (b < 0) {
+        res.innerHTML += `b = ${b} (Negativo)<br>`
+    } else if(b == 0) {
+        res.innerHTML += `b = 0<br>`
+    }
+
+    if (c > 0) {
+        res.innerHTML += `c = ${c} (Positivo)<br>`
+    } else if (c < 0) {
+        res.innerHTML += `c = ${c} (Negativo)<br>`
+    } else if (c == 0) {
+        res.innerHTML += `c = 0`
+    }
+
+    res.innerHTML += `<br><hr><br>`
+    
+
+
+    res.innerHTML +=  'Calculando o delta... &#128516<br>';
+    res.innerHTML +=  'Δ = b² - 4.a.c <br>';
+    res.innerHTML +=  `Δ = ${b}² - 4.${a}.${c} <br>`;
+    res.innerHTML += `Δ = ${b}² - 4.${a * c} <br>`;
+    res.innerHTML += `Δ = ${b ** 2} - ${4 * a * c} <br>`;
+    res.innerHTML += `Δ = ${delta} <br><br><hr><br>`
+
+
+    if (delta < 0) {
+        res.innerHTML += 'Como o Δ é negativo, não temos raízes reais.';
+    } else if (delta > 0) {
 
         // Se B for menor que zero...
         if (b < 0) {
@@ -78,8 +109,8 @@ function calcular() {
             } else {
                 res.innerHTML += `Informação: O delta não possui raiz quadrada<br>`
                 res.innerHTML += `x = –b ± √Δ ÷ 2·a<br>`
-                res.innerHTML += `x = ${b} ± √${delta} ÷ 2·${a}<br>`
-                res.innerHTML += `x = ${b} ± √${delta} ÷ ${2 * a}<br><br>`
+                res.innerHTML += `x = ${b/(2*a)} ± √${delta} ÷ 2·${a}<br>`
+                res.innerHTML += `x = ${b/(2*a)} ± √${delta} ÷ ${2 * a}<br><br>`
 
                 res.innerHTML += `x1 e x2 encontrados!&#128513;<br>`
                 res.innerHTML += `x1 = ${b/(2*a)} + √${delta}<br>`
@@ -90,29 +121,24 @@ function calcular() {
             }
         }
     } else if (delta == 0) {
-        res.innerHTML =  'Calculando o delta... &#128516<br>'
-        res.innerHTML +=  'Δ = b² - 4.a.c <br>'
-        res.innerHTML +=  `Δ = ${b}² - 4.${a}.${c} <br>`
-        res.innerHTML += `Δ = ${b}² - 4.${a * c} <br>`
-        res.innerHTML += `Δ = ${b ** 2} - ${4 * a * c} <br>`
-        res.innerHTML += `Δ = ${delta} <br><br><hr><br>`
         
-        b = b * -1
         if (b > 0) {
+            b = b * -1
             res.innerHTML += `Raíz encontrada!&#128513;<br>`
             res.innerHTML += `x = –b ± √Δ ÷ 2·a<br>`
-    
+            
             res.innerHTML += `x = ${b} ± √0 ÷ 2·${a}<br>`
             res.innerHTML += `x = ${b} ± 0 ÷ ${2*a}<br>`
-            res.innerHTML += `x1 = ${b} + 0 ÷ ${2*a}<br>`
+            res.innerHTML += `x1 = ${b} ÷ ${2*a}<br>`
             res.innerHTML += `A raíz da equação é: ${r}`
         } else if (b < 0) {
+            b = b * -1
             res.innerHTML += `Raíz encontrada!&#128513;<br>`
             res.innerHTML += `x = –b ± √Δ ÷ 2·a<br>`
     
-            res.innerHTML += `x = -(${b}) ± √0 ÷ 2·${a}<br>`
+            res.innerHTML += `x = -(-${b}) ± √0 ÷ 2·${a}<br>`
             res.innerHTML += `x = ${b} ± 0 ÷ ${2*a}<br>`
-            res.innerHTML += `x1 = ${b} + 0 ÷ ${2*a}<br>`
+            res.innerHTML += `x1 = ${b} ÷ ${2*a}<br><br>`
             res.innerHTML += `A raíz da equação é: ${r}`
         }
     }
