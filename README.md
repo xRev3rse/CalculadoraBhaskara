@@ -15,9 +15,10 @@ O projeto ainda está em desenvolvimento e as próximas atualizações serão vo
 - [x] Versão adaptada para telas menores
 - [ ] Copy to Clipboard
 
+<img src="screenshot2.jpg" width="500px">
+
 ## 🚀 Instalando Calculadora Bhaskara
 
-<img src="screenshot2.jpg" width="500px">
 Para instalar o nosso projeto, siga estas etapas:
 
 Linux e macOS:
