@@ -2,7 +2,7 @@
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/iuricode/README-template?style=for-the-badge)
 
-<img src="screenshot.jpg" width="500px">
+<img src="screenshotx.jpg" width="500px">
 
 ### Ajustes e melhorias
 
