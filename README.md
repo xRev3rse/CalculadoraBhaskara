@@ -15,7 +15,7 @@ O projeto ainda está em desenvolvimento e as próximas atualizações serão vo
 - [x] Versão adaptada para telas menores
 - [ ] Copy to Clipboard
 
-<img src="screenshot2.jpg" width="500px">
+<img src="screenshot2.jpg" width="400px">
 
 ## 🚀 Instalando Calculadora Bhaskara
 
